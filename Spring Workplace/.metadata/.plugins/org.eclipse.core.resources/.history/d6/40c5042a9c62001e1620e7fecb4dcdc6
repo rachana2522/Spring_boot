@@ -1,0 +1,8 @@
+package com.cozentus.SpringBootApp;
+
+
+@RestController
+public class PageController {
+	public String
+
+}

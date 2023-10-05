@@ -1,0 +1,24 @@
+package com.cozentus.SpringBootJPA;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.cozentus.SpringBootJPA.User.User;
+import com.cozentus.SpringBootJPA.repository.UserRepositary;
+
+@SpringBootApplication
+public class SpringBootJpaApplication {
+
+	public static void main(String[] args) {
+	ApplicationContext ac = SpringApplication.run(SpringBootJpaApplication.class, args);
+	UserRepositary userrepositary = ac.getBean(UserRepositary.class);
+	
+	User user = new User();
+	user.setName("Rachana");
+	user.setPassword("ruhi@123");
+	user.setCity("jajpur");
+	user.setStatus("single");
+	}
+
+}

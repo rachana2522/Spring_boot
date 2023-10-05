@@ -1,0 +1,8 @@
+package com.cozentus.SpringBootJPA.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface UserRepositary  extends  CrudRepository<T, ID>{
+	
+
+}

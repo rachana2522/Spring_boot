@@ -1,0 +1,45 @@
+package com.cozentus.SpringBootJPA;
+
+import java.util.Optional;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.cozentus.SpringBootJPA.User.User;
+
+import com.cozentus.SpringBootJPA.repository.UserRepository;
+
+@SpringBootApplication
+public class SpringBootJpaApplication {
+
+	public static void main(String[] args) {
+	ApplicationContext ac = SpringApplication.run(SpringBootJpaApplication.class, args);
+	UserRepository userrepository = ac.getBean(UserRepository.class);
+	
+	User user = new User();
+	user.setName("Suba");
+	user.setPassword("sri#12");
+	user.setCity("bhadark");
+	user.setStatus("married");
+	userrepository.save(user);
+	
+	
+	//update
+
+//	Optional<User> user=userrepository.findById(1);
+//	User userobject = user.get();
+//    userobject.setName("LUCKY");
+//    userobject.setPassword("lucy@123");
+//   userrepository.save(userobject);
+//    System.out.println("userobject");
+	
+	
+//Iterable<User> user= userrepository.findAll();
+//System.out.println(user);
+// 
+	
+}
+	
+	
+}

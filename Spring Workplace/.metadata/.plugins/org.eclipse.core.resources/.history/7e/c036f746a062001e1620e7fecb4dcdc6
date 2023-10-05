@@ -1,0 +1,5 @@
+package com.cozentus.SpringBootApp;
+
+public class Bean {
+
+}

@@ -1,0 +1,27 @@
+package com.cozentus.SpringBootApp;
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+public class PageController {
+	
+@RequestMapping("/hello")
+public String helloDude() {
+		return "This is dude of mine";
+	}
+@GetMapping("/hell")
+public String helloDud() {
+		return "This is dude of my get mapping of mine";
+	}
+
+@GetMapping("/mybean")
+public Bean getBean() {
+	return new Bean("Hii Bishalwelcome to my house");
+}
+
+}
+

@@ -1,0 +1,5 @@
+package com.cozentus.SpringBootJPA.Service;
+
+public class UserService {
+
+}

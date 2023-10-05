@@ -1,0 +1,11 @@
+package com.cozentus.SpringBootJPA.Service;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserService {
+	
+	
+	
+
+}

@@ -1,0 +1,6 @@
+package com.cozentus.SpringBoot.User;
+
+public class UserRepositary {
+	
+
+}

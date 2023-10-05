@@ -1,0 +1,6 @@
+package com.cozentus.SpringBootJPA.repository;
+
+public interface UserRepositary  {
+	
+
+}

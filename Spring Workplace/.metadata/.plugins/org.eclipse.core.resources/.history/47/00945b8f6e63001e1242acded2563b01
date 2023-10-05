@@ -1,0 +1,11 @@
+package com.cozentus.SpringBootJPA.Controller;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cozentus.SpringBootJPA.User.User;
+
+
+public interface UserRepository extends JpaRepository<User, Long> {
+	
+}
+
